@@ -1,6 +1,6 @@
-# React App with Docker
+# Descope React App with Docker
 
-This is a simple TypeScript-based React app which is built and served using Docker and Nginx.
+This is a simple TypeScript-based React app which show Descope flow is built and served using Docker and Nginx.
 
 ## Prerequisites
 
@@ -24,6 +24,14 @@ Before you begin, ensure you have met the following requirements:
     ```bash
     npm install
     ```
+
+## Running the app locally
+
+To run the app locally, you can use:
+
+```bash
+npm start
+```
 
 ## Building
 

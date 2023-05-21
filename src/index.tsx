@@ -1,8 +1,13 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import { AuthProvider  } from '@descope/react-sdk';
+import App from './App';
 
-const App = () => {
-  return <h1>Hello, Docker!</h1>
+const AppContainer = () => {
+  return (
+    <AuthProvider projectId="P2My9KRakUMj40L8KOBjAJLVWhWC">
+      <App/>
+    </AuthProvider>
+  )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppContainer />, document.getElementById('root'));
