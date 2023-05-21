@@ -33,6 +33,8 @@ To run the app locally, you can use:
 npm start
 ```
 
+You should now be able to see the application running at `http://localhost:8080` in your web browser.
+
 ## Building
 
 To build the React app locally, you can use:
