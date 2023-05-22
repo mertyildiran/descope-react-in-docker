@@ -1,24 +1,100 @@
 {
-  "name": "descope-react-in-docker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "name": "kubeshark",
+  "version": "0.0.0",
+  "description": "Made with create-react-library",
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@descope/react-sdk": "^0.0.0-next-dd59e8aa-20230521",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.0.4"
+  "license": "MIT",
+  "repository": "/kubeshark-common",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
   },
+  "scripts": {
+    "start": "NODE_ENV=development runtime-env-cra --config-name=./public/runtime-env.js && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings=0"
+  },
+  "peerDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.54",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^17.0.2",
+    "recoil": "^0.7.2",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "@descope/react-sdk": "^1.0.4",
+    "@elastic/eui": "^60.2.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/lab": "^5.0.0-alpha.84",
+    "@mui/material": "^5.8.2",
+    "@mui/styles": "^5.8.0",
+    "@uiw/react-textarea-code-editor": "^2.1.1",
+    "ace-builds": "^1.6.0",
+    "axios": "^0.27.2",
+    "core-js": "^3.22.7",
+    "file-saver": "^2.0.5",
+    "highlight.js": "^11.5.1",
+    "json-beautify": "^1.1.1",
+    "jsonpath": "^1.1.1",
+    "keyboard-css": "^1.2.4",
+    "marked": "^4.0.16",
+    "material-ui-popup-state": "^2.0.1",
+    "mobx": "^6.6.0",
+    "moment": "^2.29.3",
+    "node-fetch": "^3.2.4",
+    "numeral": "^2.0.6",
+    "protobuf-decoder": "^0.1.2",
+    "react-ace": "^9.0.0",
+    "react-graph-vis": "^1.0.7",
+    "react-lazylog": "^4.5.3",
+    "react-lowlight": "^3.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-scrollable-feed-virtualized": "^1.4.9",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^8.2.0",
+    "recharts": "^2.1.10",
+    "runtime-env-cra": "^0.2.4",
+    "seedrandom": "^3.0.5",
+    "styled-components": "^5.3.5",
+    "use-file-picker": "^1.4.2",
+    "web-vitals": "^2.1.4",
+    "xml-formatter": "^2.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@svgr/rollup": "^6.2.1",
+    "@types/ace": "^0.0.48",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^4.0.0",
+    "microbundle-crl": "^0.13.11",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup-plugin-import-css": "^3.0.3",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sass": "^1.2.12",
+    "rollup-plugin-scss": "^3.0.0",
+    "typescript": "^4.5.3"
+  },
+  "files": [
+    "src/*.scss",
+    "dist"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -30,12 +106,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "html-webpack-plugin": "^5.5.1",
-    "ts-loader": "^9.4.2",
-    "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
   }
 }
